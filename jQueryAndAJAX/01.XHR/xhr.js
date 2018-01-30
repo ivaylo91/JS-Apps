@@ -13,6 +13,6 @@ function loadRepos() {
         }
         output.innerHTML += '</ul>';
     });
-    req.open("GET", "https://api.github.com/usersers/ivaylo91/repos", true);
+    req.open("GET", "https://api.github.com/users/ivaylo91/repos", true);
     req.send();
 }
