@@ -1,6 +1,8 @@
 function loadRepos() {
+    let username = $('#username').val();
+
     $.ajax({
-        url: "https://api.github.com/users/ivaylo91/repos",
+        url: `https://api.github.com/users/${username}/repos`,
         method: "GET",
         success: display,
         error: errorDisplay
