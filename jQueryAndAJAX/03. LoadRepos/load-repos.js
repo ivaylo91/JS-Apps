@@ -7,7 +7,8 @@ function loadRepos() {
         url: `https://api.github.com/users/${username}/repos`,
         method: "GET",
         success: display,
-        error: errorDisplay
+        error: errorDisplay,
+        complete: () => $('#btnLoad').prop('disabled', false)
     });
 }
 
