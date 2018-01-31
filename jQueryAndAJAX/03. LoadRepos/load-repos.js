@@ -15,7 +15,7 @@ function display(repos) {
     for (let repo  of repos) {
         $(`<li><a href="${repo.html_url}" target="_blank"> ${(repo.name)}</a></li>`).appendTo(list);
     }
-    output.append(list);
+    output.html(list);
 }
 
 function errorDisplay() {
