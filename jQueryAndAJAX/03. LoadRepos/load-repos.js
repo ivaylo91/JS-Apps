@@ -1,7 +1,8 @@
 function loadRepos() {
     $.ajax({
         url: "https://api.github.com/users/ivaylo91/repos",
-        success: display
+        success: display,
+        error: errorDisplay
     });
 }
 
@@ -12,4 +13,8 @@ function display(repos) {
         output.innerHTML += `<li>${JSON.stringify(repo.name)}</li>`;
     }
     output.innerHTML += '</ul>';
+}
+
+function errorDisplay() {
+    throw new Error('Invalid URL');
 }
