@@ -1,6 +1,7 @@
 function loadRepos() {
+    $('#result').text('Loading...');
+    $('#btnLoad').prop('disabled', true);
     let username = $('#username').val();
-
     $.ajax({
         url: `https://api.github.com/users/${username}/repos`,
         method: "GET",
