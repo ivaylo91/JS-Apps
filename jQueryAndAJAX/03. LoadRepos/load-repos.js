@@ -10,12 +10,12 @@ function loadRepos() {
 }
 
 function display(repos) {
-    let output = document.getElementById('result');
-    output.innerHTML = '<ul>';
+    let output = $('#result');
+    let list = $('<ul>');
     for (let repo  of repos) {
-        output.innerHTML += `<li>${(repo.name)}</li>`;
+        $(`<li>${(repo.name)}</li>`).appendTo(list);
     }
-    output.innerHTML += '</ul>';
+    output.append(list);
 }
 
 function errorDisplay() {
