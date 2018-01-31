@@ -1,6 +1,7 @@
 function loadRepos() {
     $.ajax({
         url: "https://api.github.com/users/ivaylo91/repos",
+        method: "GET",
         success: display,
         error: errorDisplay
     });
