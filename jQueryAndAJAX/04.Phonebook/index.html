@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+    <style>
+        label, input, button {
+            display: block;
+        }
+
+        #notification {
+            float: right;
+            background: #ff0000;
+            color: #fff;
+            padding: 0.5em 2em 0.5em 2em;
+            margin: 1em;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<h1>Phonebook</h1>
+<div id="contacts">
+    <h2>Contacts</h2>
+    <ul id="list">
+    </ul>
+</div>
+<div id="create">
+    <label for="nameCrt">Name:</label><input type="text" id="nameCrt">
+    <label for="phoneCrt">Phone:</label><input type="text" id="phoneCrt">
+    <button id="btnCreate">Create</button>
+</div>
+<div id="notification"></div>
+</body>
+</html>
