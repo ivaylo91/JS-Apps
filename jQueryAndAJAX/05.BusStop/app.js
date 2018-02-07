@@ -18,6 +18,6 @@ function displayBuses(data) {
     }
 }
 
-function displayError(error) {
-    console.log("Error:" + error.responseText);
+function displayError() {
+    $('#stopName').text("Error");
 }
