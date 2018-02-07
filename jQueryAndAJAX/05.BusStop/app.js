@@ -1,3 +1,5 @@
+// valid data to IDs 1287, 1308, 1327 and 2334.
+
 function getInfo() {
     let stopId = $('#stopId').val();
     $.ajax({
